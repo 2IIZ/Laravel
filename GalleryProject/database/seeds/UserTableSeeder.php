@@ -11,7 +11,7 @@ class UserTableSeeder extends Seeder
      */
     public function run()
     {
-        Models\User::create([
+        User::create([
           'nom' => 'Stranger',
           'email' => 'strangeruser@domaine.fr',
           'password' => bcrypt('user'),
