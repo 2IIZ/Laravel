@@ -1,0 +1,5 @@
+Create seeder : php artisan make:seeder UsersTableSeeder
+
+Régénérer la liste des classes du projet avec : composer dump-autoload
+
+version of my laravel : php artisan --version
