@@ -1,7 +1,9 @@
 <?php
 
+//to make this sheet : php artisan make:seeder UsersTableSeeder
+
 use Illuminate\Database\Seeder;
-use App\Category;
+use App\Models\Category;
 
 class CategoryTableSeeder extends Seeder
 {
