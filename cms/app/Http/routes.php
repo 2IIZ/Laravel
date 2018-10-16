@@ -1,4 +1,7 @@
 <?php
+# @Date:   2018-10-16T09:23:15+02:00
+# @Last modified time: 2018-10-16T13:23:52+02:00
+
 
 /*
 |--------------------------------------------------------------------------
@@ -12,5 +15,31 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  return view('welcome');
 });
+
+Route::get('/about', function () {
+  return "Hi about page !";
+});
+
+Route::get('/contact', function () {
+  return "Hi contacts !";
+});
+
+//passing variables
+Route::get('/post/{id}/{name}', function($id, $name){
+
+  return "this is post number ". $id . " ". $name;
+
+});
+
+//shorter url
+// Route::get('admin/posts/example', array('as'->'admin.home' function(){
+//
+//     // <a href= "route('admin.home')"> CLICK HERE </a>
+//     $url = route('admin.home');
+//     return "this url is". $url;
+//
+// }));
+
+// To know all my routes : php artisan route:list
