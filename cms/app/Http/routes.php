@@ -1,6 +1,6 @@
 <?php
 # @Date:   2018-10-16T09:23:15+02:00
-# @Last modified time: 2018-11-06T09:11:02+01:00
+# @Last modified time: 2018-11-06T10:32:00+01:00
 
 
 /*
@@ -49,3 +49,7 @@ Route::get('/', function () {
 // Route::get('/post/{id}', 'PostsController@index'); // @index : go directly to the index method
 
 Route::resource('posts', 'PostsController'); //no need for asking @index. 'resource' ask for all method of basic method of 'resource'
+
+Route::get('contact', 'PostsController@contactView');
+
+Route::get('posts/{id}/{name}/{password}', 'PostsController@showPost'); // passing data to views

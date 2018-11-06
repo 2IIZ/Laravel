@@ -1,6 +1,6 @@
 <?php
 # @Date:   2018-10-16T13:33:26+02:00
-# @Last modified time: 2018-11-06T09:16:28+01:00
+# @Last modified time: 2018-11-06T10:41:52+01:00
 
 
 // php artisan make:controller --resource PostsController
@@ -87,5 +87,21 @@ class PostsController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function contactView(){
+
+        $people = ['Ivan', 'Jose', 'Croco', 'James', 'Malkyia'];
+
+        return view('contact', compact('people'));
+
+    }
+
+    public function showPost($id, $name, $password){
+
+        // return view('post')->with('id', $id); //with to send $id to the view. Very oldy
+
+        return view('post', compact('id', 'name', 'password'));
+
     }
 }
