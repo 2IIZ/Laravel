@@ -6,7 +6,7 @@
 @extends('layouts.app')
 
 
-@section('content')
+@section('content') {{-- used to put data into the root page (app.blade.php)--}}
 
   <div class="content">
       <div class="title">Posts</div>

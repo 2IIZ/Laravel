@@ -3,6 +3,7 @@
 # @Last modified time: 2018-11-06T10:27:06+01:00
 -->
 
+{{-- root page --}}
 <html>
     <head>
         <title>Contact</title>
@@ -41,7 +42,7 @@
     </head>
     <body>
         <div class="container">
-            @yield('content')
+            @yield('content') {{-- used to put data here from another page--}}
         </div>
 
         @yield('footer')
