@@ -30,3 +30,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 _____
 
 Raw SQL data
+Making relationships with Eloquent
