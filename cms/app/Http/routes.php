@@ -1,6 +1,46 @@
 <?php
 # @Date:   2018-10-16T09:23:15+02:00
-# @Last modified time: 2018-11-13T10:33:39+01:00
+# @Last modified time: 2018-11-16T11:14:48+01:00
+
+
+/*
+|--------------------------------------------------------------------------
+| DATABASE Raw SQL Queries
+|--------------------------------------------------------------------------
+*/
+//insert data in SQL
+Route::get('/insert', function(){
+
+    DB::insert('insert into posts(title, content) values(?, ?)', ['PHP with Laravel', 'Laravel best framework ever !']);
+
+});
+
+Route::get('/read', function(){
+    $result = DB::select('select * from posts where id = ?', [1]);
+
+    return $result;
+
+    // foreach($result as $post){
+    //   $overall = "$post->title, $post->content";
+    //
+    //   return $overall;
+    // }
+});
+
+Route::get('/update', function(){
+
+    $updated = DB::update('update posts set title = "Update title" where id = ?', [1]);
+
+    return $updated;
+});
+
+Route::get('/delete', function(){
+
+    $deleted = DB::delete('delete from posts where id = ?', [1]);
+
+    return $deleted;
+});
+
 
 /*
 |--------------------------------------------------------------------------
@@ -160,44 +200,71 @@ Route::get('/softDeletesForceDelete', function(){
     return $post;
 });
 
-
 /*
 |--------------------------------------------------------------------------
-| DATABASE Raw SQL Queries
+| ELOQUENET RELATIONSHIPS
 |--------------------------------------------------------------------------
 */
-//insert data in SQL
-Route::get('/insert', function(){
+use App\User;
 
-    DB::insert('insert into posts(title, content) values(?, ?)', ['PHP with Laravel', 'Laravel best framework ever !']);
+// One to One relationship
+Route::get('/oneToOne/{id}', function($id){
+
+    // 1. Create in the db a user_id, in the foreign Table .(Post)., so we know from who is the post.
+    // 2. Add in "User.php" a function .(post).
+    //    in the fun,  use "hasOne()" for making the relationship. From User to the Post Table.
+
+    return User::find($id)->post->title; //you can access columns like there are properties
+});
+
+//Reverse relation One to One
+Route::get('/oneToOneReverse/{id}', function(){
+    //1. added to the Post.php belongsTo
+    return Post::find($id)->user->name;
+});
+
+
+//One to Many relationship
+Route::get('/oneToMany', function(){
+
+    // add hasMany() in User.php
+    $user = User::find(1); //user from id 1
+
+    foreach($user->posts as $post){
+        //return all title of the user
+        echo $post->title . "<br>";
+    }
+});
+
+
+//Many To Many RELATIONSHIPS
+Route::get('/manyToMany/{id}', function($id){
+    // creation of the Role table "php artisan make:model Role -m"
+    // making the pivot table
+    // name convention : alphabetical order and in singular "role_user"
+    // creation of pivot table : "php artisan  make:migration create_users_roles_table --create=role_user"
+    // added roles and role_user columns.
+    // added belongsToMany() int User.php
+
+    echo "Asking for the user, to retrieve his role : ";
+
+    $user = User::find($id);
+
+    // $user = User::find($id)->roles()->orderBy('name')->get(); // easly can make a where($id) easly in one line.
+    // return $user;
+
+    foreach($user->roles as $role){
+      return $role->name;
+    }
+});
+
+// accessing the intermediate table (pivot table)
+Route::get('/user/pivot', function(){
+
+
 
 });
 
-Route::get('/read', function(){
-    $result = DB::select('select * from posts where id = ?', [1]);
-
-    return $result;
-
-    // foreach($result as $post){
-    //   $overall = "$post->title, $post->content";
-    //
-    //   return $overall;
-    // }
-});
-
-Route::get('/update', function(){
-
-    $updated = DB::update('update posts set title = "Update title" where id = ?', [1]);
-
-    return $updated;
-});
-
-Route::get('/delete', function(){
-
-    $deleted = DB::delete('delete from posts where id = ?', [1]);
-
-    return $deleted;
-});
 
 
 

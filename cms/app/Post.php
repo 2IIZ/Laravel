@@ -1,6 +1,6 @@
 <?php
 # @Date:   2018-11-09T11:17:17+01:00
-# @Last modified time: 2018-11-13T09:36:55+01:00
+# @Last modified time: 2018-11-16T09:27:20+01:00
 
 
 namespace App;
@@ -27,6 +27,11 @@ class Post extends Model
 
     ];
 
+//Inverse relation One to One
+public function user(){
 
+    return $this->belongsTo('App\User'); //this user belongsTo this post
+
+}
 
 }
