@@ -1,6 +1,6 @@
 <?php
-# @Date:   2018-11-09T09:48:32+01:00
-# @Last modified time: 2018-12-04T09:38:53+01:00
+# @Date:   2018-12-04T10:10:40+01:00
+# @Last modified time: 2018-12-04T10:18:05+01:00
 
 
 
@@ -8,7 +8,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePostsTable extends Migration
+class CreateVideosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -17,11 +17,9 @@ class CreatePostsTable extends Migration
      */
     public function up()
     {
-        Schema::create('posts', function (Blueprint $table) {
+        Schema::create('videos', function (Blueprint $table) {
             $table->increments('id');
-            // $table->integer('user_id')->unsigned(); //We didn't need it anymore with polymorphic relationship
-            $table->string('title');
-            $table->text('content');
+            $table->string('name');
             $table->timestamps();
         });
     }
@@ -33,6 +31,6 @@ class CreatePostsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('posts');
+        Schema::drop('videos');
     }
 }

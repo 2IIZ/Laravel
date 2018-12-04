@@ -1,6 +1,6 @@
 <?php
 # @Date:   2018-11-16T10:01:38+01:00
-# @Last modified time: 2018-11-16T11:12:31+01:00
+# @Last modified time: 2018-12-04T08:57:00+01:00
 
 
 
@@ -16,6 +16,6 @@ class Role extends Model
     public function users(){
 
         return $this->belongsToMany('App\User');
-        
+
     }
 }

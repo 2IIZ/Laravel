@@ -1,6 +1,6 @@
 <?php
 # @Date:   2018-10-16T09:23:15+02:00
-# @Last modified time: 2018-11-16T11:14:48+01:00
+# @Last modified time: 2018-12-04T13:55:34+01:00
 
 
 /*
@@ -206,6 +206,9 @@ Route::get('/softDeletesForceDelete', function(){
 |--------------------------------------------------------------------------
 */
 use App\User;
+use App\Country;
+use App\Photo;
+use App\Tag;
 
 // One to One relationship
 Route::get('/oneToOne/{id}', function($id){
@@ -223,7 +226,6 @@ Route::get('/oneToOneReverse/{id}', function(){
     return Post::find($id)->user->name;
 });
 
-
 //One to Many relationship
 Route::get('/oneToMany', function(){
 
@@ -235,7 +237,6 @@ Route::get('/oneToMany', function(){
         echo $post->title . "<br>";
     }
 });
-
 
 //Many To Many RELATIONSHIPS
 Route::get('/manyToMany/{id}', function($id){
@@ -261,12 +262,80 @@ Route::get('/manyToMany/{id}', function($id){
 // accessing the intermediate table (pivot table)
 Route::get('/user/pivot', function(){
 
+    $user = User::find(1);
 
+    foreach($user->roles as $role) {
+
+      return $role->pivot;
+
+    }
+});
+
+// get a post from user from country table
+Route::get('/user/country', function(){
+
+    $country = Country::find(1);
+
+    foreach($country->posts as $post){
+      echo $post->title; //Found the post from country where user is 1
+    }
+});
+
+// Polymorphic relations
+Route::get('/user/photos', function(){
+
+  $user = User::find(1);
+
+  foreach($user->photos as $photo){
+
+      return $photo->path; //found user photo
+
+  }
 
 });
 
+//found post photo from user
+Route::get('/post/photos', function(){
 
+  $post = Post::find(1);
 
+  foreach($post->photos as $photo){
+
+      echo $photo->path . '<br>'; //found post photo from user 1
+
+  }
+
+});
+
+//found the owner of the image
+Route::get('/photo/{id}/post', function($id){
+
+    $photo = Photo::findOrFail($id);
+
+    return $photo->imageable;
+
+});
+
+// Polymorphic Many to Many
+Route::get('/post/tag', function(){
+
+    $post = Post::find(1);
+
+    foreach ($post->tags as $tag) {
+      echo $tag->name;
+    }
+
+});
+
+Route::get('/tag/post', function(){
+
+    $tag = Tag::find(2);
+
+    foreach ($tag->posts as $post) {
+      echo $post->title;
+    }
+
+});
 
 /*
 |--------------------------------------------------------------------------

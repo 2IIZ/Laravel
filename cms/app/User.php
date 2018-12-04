@@ -1,6 +1,6 @@
 <?php
 # @Date:   2018-10-16T09:23:15+02:00
-# @Last modified time: 2018-11-16T11:10:58+01:00
+# @Last modified time: 2018-12-04T09:54:20+01:00
 
 
 
@@ -47,7 +47,13 @@ class User extends Authenticatable
     //added function manyToMany relationship
     public function roles(){
 
-      return $this->belongsToMany('App\Role');
+      return $this->belongsToMany('App\Role')->withPivot('created_at');
+
+    }
+
+    public function photos(){
+
+      return $this->morphMany('App\Photo', 'imageable');
 
     }
 
