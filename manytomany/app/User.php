@@ -1,4 +1,9 @@
 <?php
+# @Date:   2018-12-05T18:36:24+01:00
+# @Last modified time: 2018-12-05T18:51:37+01:00
+
+
+
 
 namespace App;
 
@@ -23,4 +28,8 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function roles(){
+      return $this->belongsToMany('App\Role'); //only this for the many to many
+    }
 }
