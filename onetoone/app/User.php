@@ -1,4 +1,9 @@
 <?php
+# @Date:   2018-12-04T16:32:27+01:00
+# @Last modified time: 2018-12-04T17:12:39+01:00
+
+
+
 
 namespace App;
 
@@ -23,4 +28,8 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function address(){
+      return $this->hasOne('App\Address');
+    }
 }
