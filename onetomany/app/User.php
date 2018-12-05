@@ -1,4 +1,9 @@
 <?php
+# @Date:   2018-12-05T08:26:01+01:00
+# @Last modified time: 2018-12-05T08:36:03+01:00
+
+
+
 
 namespace App;
 
@@ -23,4 +28,8 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function posts(){
+        return $this->hasMany('App\Post');
+    }
 }
