@@ -1,6 +1,6 @@
 <?php
 # @Date:   2018-10-16T09:23:15+02:00
-# @Last modified time: 2018-12-04T13:55:34+01:00
+# @Last modified time: 2018-12-20T18:22:59+01:00
 
 
 /*
@@ -112,7 +112,7 @@ Route::get('/insertEloquentModifing', function(){
 });
 
 // create data in laravel
-Route::get('/create', function(){
+Route::get('/createData', function(){
 
     Post::create(['title'=>'the create method',
                 'content' => "I'm learning a lot"]);
@@ -364,25 +364,26 @@ Route::get('/', function () {
 // });
 
 // //passing variables
-// Route::get('/post/{id}/{name}', function($id, $name){
-//
-//   return "this is post number ". $id . " ". $name;
-//
-// });
+Route::get('/post/{id}/{name}', function($id, $name){
+
+  return "this is post number ". $id . " ". $name;
+
+});
 
 // //shorter url
 // Route::get('admin/posts/example', array('as'->'admin.home' function(){
 //
 //     // <a href= "route('admin.home')"> CLICK HERE </a>
-//     $url = route('admin.home');
+//     $url = route("admin.home");
 //     return "this url is". $url;
 //
 // }));
 
-// Route::get('/post/{id}', 'PostsController@index'); // @index : go directly to the index method
+Route::get('/post/{id}', 'PostsController@index'); // @index : go directly to the index method
 
-// Route::resource('posts', 'PostsController'); //no need for asking @index. 'resource' ask for all method of basic method of 'resource'
+//CRUD Application
+Route::resource('posts', 'PostsController'); //no need for asking @index. 'resource' ask for all method of basic method of 'ressource' (PostsController.php)
 //
-// Route::get('contact', 'PostsController@contactView');
+Route::get('contact', 'PostsController@contactView');
 //
-// Route::get('posts/{id}/{name}/{password}', 'PostsController@showPost'); // passing data to views
+Route::get('posts/{id}/{name}/{password}', 'PostsController@showPost'); // passing data to views

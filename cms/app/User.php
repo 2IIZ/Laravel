@@ -1,6 +1,6 @@
 <?php
 # @Date:   2018-10-16T09:23:15+02:00
-# @Last modified time: 2018-12-04T09:54:20+01:00
+# @Last modified time: 2018-12-20T16:44:20+01:00
 
 
 
@@ -49,6 +49,8 @@ class User extends Authenticatable
 
       return $this->belongsToMany('App\Role')->withPivot('created_at');
 
+			//To customize tables name and columns follow the format below
+			//return $this->belongsToMany('App\Role', 'user_roles', 'user_id', 'role_id');
     }
 
     public function photos(){
