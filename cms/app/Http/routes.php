@@ -423,3 +423,12 @@ Route::get('/getname', function(){
   echo $user->name;
 
 });
+
+Route::get('/setname', function(){
+
+  $user = User::find(2); // update
+
+  $user->name = "crocodile";
+  $user->save();
+
+});

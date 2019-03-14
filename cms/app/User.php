@@ -59,10 +59,17 @@ class User extends Authenticatable
 
     }
 
-    // accessors. Camel case, and Attribute all the time.
+    // accessors. Camel case, and Attribute all the time. Is the convention
     public function getNameAttribute($value){
 
       return ucfirst($value);
+
+    }
+
+    public function setNameAttribute($value){
+
+      // every time I save data in the database, the first letter will be uppercase
+      $this->attributes['name'] = ucfirst($value);
 
     }
 
