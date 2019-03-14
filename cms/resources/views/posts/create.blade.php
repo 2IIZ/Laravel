@@ -15,7 +15,7 @@
 
 	{{-- LARAVEL MODE  --}}
 
-	{!! Form::open(['method'=>'PATCH', 'action'=>'PostsController@update']) !!}
+	{!! Form::open(['method'=>'POST', 'action'=>'PostsController@store']) !!}
 		{{csrf_field()}}
 
 		<div class="form-group">

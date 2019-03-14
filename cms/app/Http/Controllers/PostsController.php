@@ -40,7 +40,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        return view('posts/create'); //creating the url for me
+        return view('posts.create'); //creating the url for me
     }
 
     /**
@@ -56,7 +56,12 @@ class PostsController extends Controller
 				//return $request->get('title'); //when submit get the 'title'
 				//return $request->title; // can use it as an object too
 
-					// this way of doing it is easy
+          // Verification, validation rules (https://laravel.com/docs/5.8/validation):
+        $this->validate($request, [
+         'title'=>'required'
+        ]);
+
+          // this way of doing it is easy
 				Post::create($request->all()); //every thing from the post will go in the create method and will be persisted to the db
 
 					// Another way of doing it
