@@ -1,6 +1,6 @@
 <?php
 # @Date:   2018-10-16T13:33:26+02:00
-# @Last modified time: 2018-12-20T18:25:35+01:00
+# @Last modified time: 2018-12-21T16:05:46+01:00
 
 
 // php artisan make:controller --resource PostsController

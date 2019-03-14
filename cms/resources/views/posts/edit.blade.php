@@ -5,22 +5,24 @@
 
 <h1>Edit Post</h1>
 
-	<form action="/posts/{{$post->id}}" method="post">
+	  {{-- this is for update the data - PATCH is very secure --}}
+		{!! Form::model($post, ['method'=>'PATCH', 'action'=>['PostsController@update', $post->id]]) !!}
 			{{csrf_field()}}
 
-				{{-- hidden input so laravel understand that this will be not a POST but a PUT or PATCH --}}
-			<input type="hidden" name="_method" value="PUT">
+			{!! Form::label('title', 'Title : ') !!}
+			{!! Form::text('title', null, ['class'=>'form-control']) !!}
 
-			<input type="text" name="title" placeholder="Title" value="{{$post->title}}">
-			<input type="submit" name="submit" value="Update">
+			{!! Form::submit('Update Post',['class'=>'btn btn-info']) !!}
 
-	</form>
+		{!! Form::close() !!}
 
-	<form action="/posts/{{$post->id}}" method="post">
+
+		{!! Form::open(['method'=>'DELETE', 'action'=> ['PostsController@destroy', $post->id]]) !!}
 			{{csrf_field()}}
-			
-			<input type="hidden" name="_method" value="DELETE">
-			<input type="submit" value="Delete">
-	</form>
+
+			{!! Form::submit('Delete Post',['class'=>'btn btn-danger']) !!}
+
+		{!! Form::close() !!}
+
 
 @endsection

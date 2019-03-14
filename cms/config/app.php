@@ -1,4 +1,9 @@
 <?php
+# @Date:   2018-11-30T10:46:47+01:00
+# @Last modified time: 2018-12-21T15:41:06+01:00
+
+
+
 
 return [
 
@@ -147,6 +152,8 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+				Collective\Html\HtmlServiceProvider::class,
+
 
         /*
          * Application Service Providers...
@@ -155,6 +162,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
 
     ],
 
@@ -202,6 +210,9 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+
+				'Form' => Collective\Html\FormFacade::class,
+      	'Html' => Collective\Html\HtmlFacade::class,
     ],
 
 ];
