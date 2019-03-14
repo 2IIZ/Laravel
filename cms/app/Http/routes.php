@@ -379,11 +379,21 @@ Route::get('/post/{id}/{name}', function($id, $name){
 //
 // }));
 
+/*
+|--------------------------------------------------------------------------
+| CRUD APPLICATION
+|--------------------------------------------------------------------------
+*/
+
 Route::get('/post/{id}', 'PostsController@index'); // @index : go directly to the index method
 
+// middleware for security purpose
+Route::group(['middleware'=>'web'], function(){});
+
 //CRUD Application
-Route::resource('posts', 'PostsController'); //no need for asking @index. 'resource' ask for all method of basic method of 'ressource' (PostsController.php)
-//
+Route::resource('/posts', 'PostsController'); //no need for asking @index. 'resource' ask for all method of basic method of 'ressource' (PostsController.php)
+
+
 Route::get('contact', 'PostsController@contactView');
-//
+
 Route::get('posts/{id}/{name}/{password}', 'PostsController@showPost'); // passing data to views
