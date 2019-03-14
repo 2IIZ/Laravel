@@ -393,7 +393,25 @@ Route::group(['middleware'=>'web'], function(){});
 //CRUD Application
 Route::resource('/posts', 'PostsController'); //no need for asking @index. 'resource' ask for all method of basic method of 'ressource' (PostsController.php)
 
-
 Route::get('contact', 'PostsController@contactView');
 
 Route::get('posts/{id}/{name}/{password}', 'PostsController@showPost'); // passing data to views
+
+// using dates with laravel
+use Carbon\Carbon;
+Route::get('/dates', function(){
+
+  $date = new DateTime("+1 week");
+
+  echo $date->format('d-m-Y');
+
+  echo "<br>";
+
+  echo Carbon::now();
+
+  echo "<br>";
+
+  echo Carbon::now()->diffForHumans();
+
+
+});
