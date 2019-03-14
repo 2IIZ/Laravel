@@ -413,5 +413,13 @@ Route::get('/dates', function(){
 
   echo Carbon::now()->diffForHumans();
 
+});
+
+// accessors
+Route::get('/getname', function(){
+
+  $user = User::find(2);
+
+  echo $user->name;
 
 });

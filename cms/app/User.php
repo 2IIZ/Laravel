@@ -59,4 +59,11 @@ class User extends Authenticatable
 
     }
 
+    // accessors. Camel case, and Attribute all the time.
+    public function getNameAttribute($value){
+
+      return ucfirst($value);
+
+    }
+
 }
