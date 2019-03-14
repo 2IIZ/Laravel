@@ -11,6 +11,7 @@ use App\Post;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Http\Requests\CreatePostRequest;
 
 if (version_compare(PHP_VERSION, '7.2.0', '>=')) {
     // Ignores notices and reports all other kinds... and warnings
@@ -49,7 +50,7 @@ class PostsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Requests\CreatePostRequest $request)
     {
         // $request : we inject this class so we get an object //
 
@@ -57,9 +58,9 @@ class PostsController extends Controller
 				//return $request->title; // can use it as an object too
 
           // Verification, validation rules (https://laravel.com/docs/5.8/validation):
-        $this->validate($request, [
-         'title'=>'required'
-        ]);
+        // $this->validate($request, [
+        //  'title'=>'required'
+        // ]);
 
           // this way of doing it is easy
 				Post::create($request->all()); //every thing from the post will go in the create method and will be persisted to the db

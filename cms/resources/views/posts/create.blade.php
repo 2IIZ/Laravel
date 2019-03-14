@@ -32,8 +32,6 @@
 
 
 	@if($errors->any())
-		<h2>GEllo</h2>
-
 		<div class="alert alert-danger">
 			<ul>
 				@foreach($errors->all() as $error)
