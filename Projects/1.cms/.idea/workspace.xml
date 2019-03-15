@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dd040746-b46e-4168-a4af-06c73c365d55" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../manytomany/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/Console/Commands/Inspire.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/Console/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/Events/Event.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/Exceptions/Handler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/Http/Controllers/Auth/PasswordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/Http/Controllers/Controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/Http/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/Http/Middleware/Authenticate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/Http/Middleware/EncryptCookies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/Http/Requests/Request.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/Http/routes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/Jobs/Job.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/Listeners/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/Policies/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/Providers/AppServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/Providers/AuthServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/Providers/EventServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/Providers/RouteServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/Role.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/app/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/artisan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/bootstrap/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/bootstrap/autoload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/bootstrap/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/config/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/config/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/config/broadcasting.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/config/cache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/config/compile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/config/database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/config/filesystems.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/config/mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/config/queue.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/config/services.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/config/session.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/config/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/database/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/database/factories/ModelFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/database/migrations/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/database/migrations/2018_12_05_174310_create_roles_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/database/migrations/2018_12_05_174405_create_role_user_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/database/seeds/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/database/seeds/DatabaseSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/public/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/public/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/public/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/resources/assets/sass/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/resources/lang/en/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/resources/lang/en/pagination.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/resources/lang/en/passwords.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/resources/lang/en/validation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/resources/views/errors/503.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/resources/views/vendor/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/server.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/storage/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/storage/app/public/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/storage/framework/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/storage/framework/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/storage/framework/sessions/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/storage/framework/views/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/storage/logs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/tests/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manytomany/tests/TestCase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/Console/Commands/Inspire.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/Console/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/Events/Event.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/Exceptions/Handler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/Http/Controllers/Auth/PasswordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/Http/Controllers/Controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/Http/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/Http/Middleware/Authenticate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/Http/Middleware/EncryptCookies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/Http/Requests/Request.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/Http/routes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/Jobs/Job.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/Listeners/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/Policies/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/Post.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/Providers/AppServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/Providers/AuthServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/Providers/EventServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/Providers/RouteServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/app/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/artisan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/bootstrap/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/bootstrap/autoload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/bootstrap/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/config/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/config/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/config/broadcasting.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/config/cache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/config/compile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/config/database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/config/filesystems.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/config/mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/config/queue.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/config/services.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/config/session.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/config/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/database/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/database/factories/ModelFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/database/migrations/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/database/migrations/2018_12_05_073212_create_posts_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/database/seeds/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/database/seeds/DatabaseSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/public/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/public/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/public/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/resources/assets/sass/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/resources/lang/en/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/resources/lang/en/pagination.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/resources/lang/en/passwords.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/resources/lang/en/validation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/resources/views/errors/503.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/resources/views/vendor/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/server.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/storage/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/storage/app/public/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/storage/framework/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/storage/framework/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/storage/framework/sessions/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/storage/framework/views/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/storage/logs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/tests/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetomany/tests/TestCase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/Address.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/Console/Commands/Inspire.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/Console/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/Events/Event.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/Exceptions/Handler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/Http/Controllers/Auth/PasswordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/Http/Controllers/Controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/Http/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/Http/Middleware/Authenticate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/Http/Middleware/EncryptCookies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/Http/Requests/Request.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/Http/routes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/Jobs/Job.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/Listeners/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/Policies/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/Providers/AppServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/Providers/AuthServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/Providers/EventServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/Providers/RouteServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/app/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/artisan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/bootstrap/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/bootstrap/autoload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/bootstrap/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/config/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/config/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/config/broadcasting.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/config/cache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/config/compile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/config/database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/config/filesystems.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/config/mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/config/queue.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/config/services.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/config/session.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/config/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/database/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/database/factories/ModelFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/database/migrations/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/database/migrations/2018_12_04_154617_create_addresses_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/database/seeds/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/database/seeds/DatabaseSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/public/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/public/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/public/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/resources/assets/sass/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/resources/lang/en/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/resources/lang/en/pagination.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/resources/lang/en/passwords.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/resources/lang/en/validation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/resources/views/errors/503.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/resources/views/vendor/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/server.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/storage/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/storage/app/public/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/storage/framework/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/storage/framework/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/storage/framework/sessions/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/storage/framework/views/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/storage/logs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/tests/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../onetoone/tests/TestCase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Console/Commands/Inspire.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Console/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Events/Event.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Exceptions/Handler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Http/Controllers/Auth/PasswordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Http/Controllers/Controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Http/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Http/Middleware/Authenticate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Http/Middleware/EncryptCookies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Http/Requests/Request.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Http/routes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Jobs/Job.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Listeners/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Photo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Policies/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Product.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Providers/AppServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Providers/AuthServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Providers/EventServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Providers/RouteServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/Staff.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/app/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/artisan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/bootstrap/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/bootstrap/autoload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/bootstrap/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/config/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/config/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/config/broadcasting.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/config/cache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/config/compile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/config/database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/config/filesystems.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/config/mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/config/queue.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/config/services.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/config/session.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/config/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/database/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/database/factories/ModelFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/database/migrations/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/database/migrations/2018_12_05_190542_create_staff_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/database/migrations/2018_12_05_190557_create_products_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/database/migrations/2018_12_05_190605_create_photos_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/database/seeds/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/database/seeds/DatabaseSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/public/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/public/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/public/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/resources/assets/sass/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/resources/lang/en/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/resources/lang/en/pagination.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/resources/lang/en/passwords.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/resources/lang/en/validation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/resources/views/errors/503.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/resources/views/vendor/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/server.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/storage/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/storage/app/public/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/storage/framework/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/storage/framework/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/storage/framework/sessions/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/storage/framework/views/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/storage/logs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/tests/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphic/tests/TestCase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Console/Commands/Inspire.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Console/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Events/Event.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Exceptions/Handler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Http/Controllers/Auth/PasswordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Http/Controllers/Controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Http/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Http/Middleware/Authenticate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Http/Middleware/EncryptCookies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Http/Requests/Request.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Http/routes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Jobs/Job.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Listeners/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Policies/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Post.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Providers/AppServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Providers/AuthServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Providers/EventServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Providers/RouteServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Tag.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Taggable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/app/Video.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/artisan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/bootstrap/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/bootstrap/autoload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/bootstrap/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/config/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/config/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/config/broadcasting.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/config/cache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/config/compile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/config/database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/config/filesystems.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/config/mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/config/queue.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/config/services.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/config/session.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/config/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/database/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/database/factories/ModelFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/database/migrations/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/database/migrations/2018_12_06_061026_create_posts_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/database/migrations/2018_12_06_061033_create_videos_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/database/migrations/2018_12_06_061038_create_tags_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/database/migrations/2018_12_06_061049_create_taggables_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/database/seeds/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/database/seeds/DatabaseSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/public/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/public/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/public/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/resources/assets/sass/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/resources/lang/en/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/resources/lang/en/pagination.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/resources/lang/en/passwords.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/resources/lang/en/validation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/resources/views/errors/503.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/resources/views/vendor/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/server.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/storage/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/storage/app/public/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/storage/framework/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/storage/framework/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/storage/framework/sessions/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/storage/framework/views/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/storage/logs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/tests/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphicmanytomany/tests/TestCase.php" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/database/migrations/2019_03_15_080926_add_path_column_to_posts.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_11_13_083841_add_deleted_at_column_to_posts_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" />
+        <option value="$PROJECT_DIR$/app/Post.php" />
+        <option value="$PROJECT_DIR$/resources/views/posts/index.blade.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/classpreloader/classpreloader" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/mtdowling/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="40" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="posts" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd040746-b46e-4168-a4af-06c73c365d55" name="Default Changelist" comment="" />
+      <created>1552636384145</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552636384145</updated>
+      <workItem from="1552636386970" duration="530000" />
+      <workItem from="1552636934502" duration="2280000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3376000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17217484" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Gulp" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22302905" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32987553" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_13_083841_add_deleted_at_column_to_posts_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_09_091144_add_is_admin_column_to_posts_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_15_080926_add_path_column_to_posts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PostsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-414">
+          <caret line="69" column="23" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/posts/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="43" lean-forward="true" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="65" column="15" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
