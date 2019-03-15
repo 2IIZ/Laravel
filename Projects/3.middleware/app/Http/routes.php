@@ -18,3 +18,10 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+
+Route::get('/admin/user/roles', ['middleware'=>['role', 'auth'], function (){
+
+    return "Middleware role";
+
+}]);
