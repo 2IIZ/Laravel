@@ -11,7 +11,23 @@
 |
 */
 
+use Illuminate\Support\Facades\Auth;
+
 Route::get('/', function () {
+
+        // check if the user is logged in
+//    if(Auth::check()){
+//        return "The user is logged in";
+//    }
+
+//    if(Auth::attempt(['username'=>$username, 'password'=>$password])){
+//
+//        return redirect()->intended('/admin');
+//    }
+
+    // login out
+//    Auth::logout();
+
     return view('welcome');
 });
 
