@@ -29,7 +29,7 @@ class PostsController extends Controller
     public function index()
     {
 
-				$posts = Post::all(); //extract all data
+				$posts = Post::latest();
 
         return view('posts.index', compact('posts')); //show index.blade.php
     }

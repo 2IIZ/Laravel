@@ -46,6 +46,12 @@ class Post extends Model
 
     }
 
+//____________________Query Scopes__________________________
 
+    public static function scopeLatest($query){
 
+      return $query->orderBy('id', 'asc')->get(); // will get the newer first
+
+    }
+//__________________________________________________________
 }
