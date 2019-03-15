@@ -14,8 +14,9 @@
 
 
 	{{-- LARAVEL MODE  --}}
+<div class="container ">
 
-	{!! Form::open(['method'=>'POST', 'action'=>'PostsController@store']) !!}
+	{!! Form::open(['method'=>'POST', 'action'=>'PostsController@store', 'files'=>true]) !!}
 		{{csrf_field()}}
 
 		<div class="form-group">
@@ -23,12 +24,17 @@
 			{!! Form::label('title', 'Title : ') !!}
 			{{-- first param is var from database, second default, anything you want  --}}
 			{!! Form::text('title', null, ['class'=>'form-control']) !!}
+		</div>
 
+		<div class="form-group">
+			{!! Form::file('file', ['class'=>'form-control']) !!}
 		</div>
 
 		{!! Form::submit('Create Post',['class'=>'btn btn-primary']) !!}
 
 	{!! Form::close() !!}
+
+</div>
 
 
 	@if($errors->any())

@@ -10,6 +10,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Post extends Model
 {
+    public $directory = '/images/';
+
     use SoftDeletes;
 
 
@@ -23,7 +25,8 @@ class Post extends Model
     protected $fillable = [
 
         'title',
-        'content'
+        'content',
+        'path'
 
     ];
 
@@ -54,4 +57,18 @@ class Post extends Model
 
     }
 //__________________________________________________________
+
+
+//____________________Query Scopes__________________________
+
+    public function getPathAttribute($value){
+
+        return $this->directory . $value;
+
+    }
+//__________________________________________________________
+
+
 }
+
+
