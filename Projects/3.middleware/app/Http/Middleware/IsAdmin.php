@@ -1,13 +1,11 @@
 <?php
 
-// php artisan make:middleware RoleMiddleware
-// used if I want certain user to access certain data.
-
 namespace App\Http\Middleware;
 
 use Closure;
+use Illuminate\Support\Facades\Auth;
 
-class RoleMiddleware
+class IsAdmin
 {
     /**
      * Handle an incoming request.
@@ -18,12 +16,14 @@ class RoleMiddleware
      */
     public function handle($request, Closure $next)
     {
-        // before request
 
-        
+        $user = Auth::user();
+
+        if(!$user->isAdmin()){
+            return redirect('/');
+        }
+
 
         return $next($request);
-
-        // after request
     }
 }
