@@ -29,4 +29,8 @@ class HomeController extends Controller
     public function calendar(){
       return view('calendar');
     }
+
+    public function rapport(){
+      return view('rapport');
+    }
 }

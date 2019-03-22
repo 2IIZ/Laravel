@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
 
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ url('/home') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
 
@@ -36,13 +36,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto ml-3">
                       <li class="nav-item">
-                        <a class="nav-link" href="{{ route('home') }}">{{ __('Accueil') }}</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="{{ route('home') }}">{{ __('Mes rapports') }}</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="{{ route('home') }}">{{ __('autres') }}</a>
+                        <a class="nav-link" href="{{ route('rapport') }}">{{ __('Mes rapports') }}</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="{{ route('calendar') }}">{{ __('Mon Calendrier') }}</a>

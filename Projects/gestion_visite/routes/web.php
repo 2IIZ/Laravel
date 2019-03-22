@@ -20,3 +20,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/calendar', 'HomeController@calendar')->name('calendar');
+
+Route::get('/rapport', 'HomeController@rapport')->name('rapport');
