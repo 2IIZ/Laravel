@@ -8,7 +8,7 @@
         <div class="table-title">
             <div class="row">
                 <div class="col-sm-6">
-                    <h2>Manage <b>Employees</b></h2>
+                    <h2>Gérer mes<b> visites</b></h2>
                 </div>
             </div>
         </div>
@@ -22,10 +22,13 @@
                     <th>Actions</th>
                 </tr>
             </thead>
+
             <tbody>
+              @foreach($users->all() as $user)
+
                 <tr>
-                    <td>Thomas Hardy</td>
-                    <td>thomashardy@mail.com</td>
+                    <td>{{$user->name}}</td>
+                    <td>{{$user->email}}</td>
                     <td>89 Chiaroscuro Rd, Portland, USA</td>
                     <td>(171) 555-2222</td>
                     <td>
@@ -33,6 +36,7 @@
                         <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></i></a>
                     </td>
                 </tr>
+              @endforeach
             </tbody>
         </table>
 

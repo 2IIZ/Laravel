@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class CalendarController extends Controller
@@ -13,7 +14,11 @@ class CalendarController extends Controller
      */
     public function index()
     {
-        return view('calendar');
+      $users = DB::table('users')->get();
+
+
+      return view('calendar', ['users' => $users]);
+
     }
 
     /**
@@ -34,7 +39,7 @@ class CalendarController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      //
     }
 
     /**
