@@ -11,6 +11,8 @@
 |
 */
 
+
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -19,6 +21,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/calendar', 'HomeController@calendar')->name('calendar');
+Route::get('/calendar', 'CalendarController@index')->name('calendar');
 
-Route::get('/rapport', 'HomeController@rapport')->name('rapport');
+Route::get('/rapport', 'RapportController@index')->name('rapport');
+
+Route::get('user/{id}', 'UserController@show');
