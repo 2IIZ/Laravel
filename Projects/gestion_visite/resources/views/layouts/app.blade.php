@@ -36,6 +36,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
+                    @if (Auth::check())
                     <ul class="navbar-nav mr-auto ml-3">
                       <li class="nav-item">
                         <a class="nav-link" href="{{ route('rapport') }}">{{ __('Mes rapports') }}</a>
@@ -44,6 +45,7 @@
                         <a class="nav-link" href="{{ route('calendar') }}">{{ __('Mon Calendrier') }}</a>
                       </li>
                     </ul>
+                    @endif
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">

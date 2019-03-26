@@ -25,6 +25,8 @@ class CreatePracticiensTable extends Migration
             $table->string('ville_origine')->nullable();
             $table->string('ville')->nullable();
             $table->string('adresse')->nullable();
+            $table->timestamp('derniere_visite')->nullable();
+            $table->timestamp('nouvelle_visite')->nullable();
             $table->timestamp('date_embauche')->nullable();
             $table->timestamps();
         });

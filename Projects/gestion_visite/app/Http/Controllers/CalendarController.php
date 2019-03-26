@@ -14,10 +14,10 @@ class CalendarController extends Controller
      */
     public function index()
     {
-      $users = DB::table('users')->get();
+      $practiciens = DB::table('practiciens')->orderBy('nouvelle_visite', 'asc')->get();
 
 
-      return view('calendar', ['users' => $users]);
+      return view('calendar', ['practiciens' => $practiciens]);
 
     }
 
