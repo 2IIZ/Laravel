@@ -39,13 +39,7 @@ class RapportController extends Controller
       $rapport->motif = $request->get('motif');
       $rapport->bilan = $request->get('bilan');
       $rapport->echantillon = $request->get('echantillon');
-
-      // $passport->email=$request->get('email');
-      // $passport->number=$request->get('number');
-      // $date=date_create($request->get('date'));
-      // $format = date_format($date,"Y-m-d");
-      // $passport->date = strtotime($format);
-      // $passport->office=$request->get('office');
+      $rapport->id_visiteur = $request->get('id_visiteur');
       $rapport->save();
 
       $rapport->bilan = $request->get('bilan');

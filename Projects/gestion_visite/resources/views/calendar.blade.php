@@ -17,7 +17,7 @@
             <table class="table table-striped table-hover">
                 <thead>
                     <tr>
-                        <th>Heure de visite</th>
+                        <th>Prochaine heure de visite</th>
                         <th>Nom</th>
                         <th>Mail</th>
                         <th>Adresse</th>
@@ -28,7 +28,7 @@
                 <tbody>
                   @foreach($practiciens->all() as $practicien)
                     <tr>
-                        <td>{{$practicien->nouvelle_visite}}</td>
+                        <td>{{date('j/m/y à H:i', strtotime($practicien->nouvelle_visite))}}</td>
                         <td>{{$practicien->name}}</td>
                         <td>{{$practicien->mail}}</td>
                         <td>{{$practicien->adresse}}</td>
@@ -60,6 +60,7 @@
                                     <label>Practicien : <b>{{$name}}</b></label>
                                 </div>
                                 <div class="form-group">
+                                    <input type="hidden" name="id_visiteur" value="{{Auth::id()}}">
                                     <input type="hidden" name="id_matricule_practicien" value="{{$id_matricule_practicien}}">
                                 </div>
                                 <div class="form-group">

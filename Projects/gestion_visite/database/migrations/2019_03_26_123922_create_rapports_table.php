@@ -16,11 +16,12 @@ class CreateRapportsTable extends Migration
         Schema::create('rapports', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('id_matricule_practicien');
+            $table->string('id_visiteur');
             $table->string('motif');
             $table->string('bilan');
             $table->string('echantillon');
             $table->timestamps();
-            
+
         });
     }
 
