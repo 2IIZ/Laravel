@@ -22,7 +22,7 @@
                         <th>Mail</th>
                         <th>Adresse</th>
                         <th>Téléphone</th>
-                        <th>Rédiger rapport</th>
+                        <th>Rédiger un rapport</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -39,6 +39,7 @@
                     </tr>
                     @php
                       $name = $practicien->name;
+                      $id_matricule_practicien = $practicien->matricule;
                     @endphp
                   @endforeach
                 </tbody>
@@ -48,31 +49,35 @@
             <div id="editEmployee" class="modal fade">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <form>
+                        <form method="POST" action="{{url('rapports')}}" enctype="multipart/form-data">
+                          @csrf
                             <div class="modal-header">
-                                <h4 class="modal-title">Rédiger rapport</h4>
+                                <h4 class="modal-title">Rédiger un rapport</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                             </div>
                             <div class="modal-body">
                                 <div class="form-group">
-                                    <label>{{$name}}</label>
+                                    <label>Practicien : <b>{{$name}}</b></label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="hidden" name="id_matricule_practicien" value="{{$id_matricule_practicien}}">
                                 </div>
                                 <div class="form-group">
                                     <label>Motif</label>
-                                    <input type="text" class="form-control" required>
+                                    <input type="text" name="motif" class="form-control" >
                                 </div>
                                 <div class="form-group">
                                     <label>Bilan</label>
-                                    <textarea class="form-control" required></textarea>
+                                    <textarea class="form-control" name="bilan"></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <label>Échantillons offerts</label>
-                                    <input type="text" class="form-control" required>
+                                    <label>Échantillons offerts</l  abel>
+                                    <input type="text" name="echantillon" class="form-control" >
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                                <input type="submit" class="btn btn-info" value="Save">
+                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Annuler">
+                                <input type="submit" class="btn btn-info" value="Sauvegarder">
                             </div>
                         </form>
                     </div>

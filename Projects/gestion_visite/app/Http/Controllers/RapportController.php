@@ -34,7 +34,22 @@ class RapportController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      $rapport = new \App\Rapport;
+      $rapport->id_matricule_practicien = $request->get('id_matricule_practicien');
+      $rapport->motif = $request->get('motif');
+      $rapport->bilan = $request->get('bilan');
+      $rapport->echantillon = $request->get('echantillon');
+
+      // $passport->email=$request->get('email');
+      // $passport->number=$request->get('number');
+      // $date=date_create($request->get('date'));
+      // $format = date_format($date,"Y-m-d");
+      // $passport->date = strtotime($format);
+      // $passport->office=$request->get('office');
+      $rapport->save();
+
+      $rapport->bilan = $request->get('bilan');
+      return redirect('calendar');
     }
 
     /**
