@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Http\Controllers;
+namespace LGSB\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -43,7 +43,7 @@ class RapportController extends Controller
      */
     public function store(Request $request)
     {
-      $rapport = new \App\Rapport;
+      $rapport = new \LGSB\Rapport;
       $rapport->id_matricule_practicien = $request->get('id_matricule_practicien');
       $rapport->motif = $request->get('motif');
       $rapport->bilan = $request->get('bilan');
@@ -74,7 +74,7 @@ class RapportController extends Controller
      */
     public function edit($id)
     {
-      $rapport = \App\Rapport::find($id);
+      $rapport = \LGSB\Rapport::find($id);
       return view('rapport.edit', compact('rapport','id'));
     }
 
@@ -87,7 +87,7 @@ class RapportController extends Controller
      */
     public function update(Request $request, $id)
     {
-      $rapport= \App\Rapport::find($id);
+      $rapport= \LGSB\Rapport::find($id);
       $rapport->motif = $request->get('motif');
       $rapport->bilan = $request->get('bilan');
       $rapport->echantillon = $request->get('echantillon');
@@ -105,7 +105,7 @@ class RapportController extends Controller
      */
     public function destroy($id)
     {
-      $rapport = \App\Rapport::find($id);
+      $rapport = \LGSB\Rapport::find($id);
       $rapport->delete();
       return Redirect::action('RapportController@index');
     }

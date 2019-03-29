@@ -28,14 +28,14 @@
                                     <td class="align-middle">{{$rapport->bilan}}</td>
                                     <td class="align-middle">{{$rapport->echantillon}}</td>
                                     <td>
-                                          <button class="btn" type="button" name="button"> <a href="{{action('RapportController@edit', $rapport->id)}}" class="edit" ><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a></button>
+                                          <button class="btn" type="button" name="button"> <a href="{{action('RapportController@edit', $rapport->id)}}" class="edit" ><i class="material-icons" data-toggle="tooltip" title="Edit">edit</i></a></button>
                                     </td>
                                     <td>
                                         <form action="{{action('RapportController@destroy', $rapport->id)}}" method="post">
                                             @csrf
                                             <input name="_method" type="hidden" value="DELETE">
 
-                                            <button class="btn btn-danger" type="submit"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></button>
+                                            <button class="btn btn-danger" type="submit"><i class="material-icons" data-toggle="tooltip" title="Edit">delete</i></button>
                                         </form>
                                     </td>
                                 </tr>

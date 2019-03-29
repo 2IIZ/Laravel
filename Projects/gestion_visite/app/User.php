@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace LGSB;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -39,6 +39,6 @@ class User extends Authenticatable
 
 
     public function role(){
-      return $this->belongsTo('App\Role');
+      return $this->belongsTo('LGSB\Role');
     }
 }

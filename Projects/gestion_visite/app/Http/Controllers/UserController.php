@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace LGSB\Http\Controllers;
 
-use App\User;
+use LGSB\User;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
