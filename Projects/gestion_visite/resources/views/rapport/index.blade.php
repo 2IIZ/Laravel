@@ -30,7 +30,6 @@
                                     <td>
                                           <button class="btn" type="button" name="button"> <a href="{{action('RapportController@edit', $rapport->id)}}" class="edit" ><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a></button>
                                     </td>
-                                    {{--  --}}
                                     <td>
                                         <form action="{{action('RapportController@destroy', $rapport->id)}}" method="post">
                                             @csrf
@@ -40,13 +39,6 @@
                                         </form>
                                     </td>
                                 </tr>
-                                @php
-                                  $matricule = $rapport->id_matricule_practicien;
-
-                                  $motif = $rapport->motif;
-                                  $bilan = $rapport->bilan;
-                                  $echantillon = $rapport->echantillon;
-                                @endphp
                               @endforeach
                         </tbody>
                     </table>
