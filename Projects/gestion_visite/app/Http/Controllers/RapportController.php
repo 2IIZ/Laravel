@@ -1,8 +1,14 @@
 <?php
 
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
+
+
 
 class RapportController extends Controller
 {
@@ -13,7 +19,10 @@ class RapportController extends Controller
      */
     public function index()
     {
-        return view('rapport');
+      $rapports = DB::table('rapports')->orderBy('created_at', 'desc')->where('id_visiteur', '=', Auth::id())->get();
+
+
+      return view('rapport.index', ['rapports' => $rapports]);
     }
 
     /**
@@ -65,7 +74,8 @@ class RapportController extends Controller
      */
     public function edit($id)
     {
-        //
+      $rapport = \App\Rapport::find($id);
+      return view('rapport.edit', compact('rapport','id'));
     }
 
     /**
@@ -77,7 +87,14 @@ class RapportController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+      $rapport= \App\Rapport::find($id);
+      $rapport->motif = $request->get('motif');
+      $rapport->bilan = $request->get('bilan');
+      $rapport->echantillon = $request->get('echantillon');
+
+      $rapport->save();
+
+      return Redirect::action('RapportController@index');
     }
 
     /**
@@ -88,6 +105,8 @@ class RapportController extends Controller
      */
     public function destroy($id)
     {
-        //
+      $rapport = \App\Rapport::find($id);
+      $rapport->delete();
+      return Redirect::action('RapportController@index');
     }
 }
