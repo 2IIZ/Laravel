@@ -2,17 +2,16 @@
 
 @section('content')
 
-<div class="container">
-  <div class="row">
-    <div class="modal-dialog">
-        <div class="modal-content">
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-md-3">
+
             <form method="POST" action="{{action('RapportController@update', $id)}}" enctype="multipart/form-data">
-              @csrf
-              <input name="_method" type="hidden" value="PATCH">
+                @csrf
+                <input name="_method" type="hidden" value="PATCH">
 
                 <div class="modal-header">
                     <h4 class="modal-title">Modifier un rapport</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
@@ -24,7 +23,7 @@
                     </div>
                     <div class="form-group">
                         <label>Bilan</label>
-                        <textarea class="form-control" name="bilan" >{{$rapport['bilan']}}</textarea>
+                        <textarea class="form-control" name="bilan">{{$rapport['bilan']}}</textarea>
                     </div>
                     <div class="form-group">
                         <label>Échantillons offerts</label>
@@ -36,8 +35,9 @@
                     <input type="submit" class="btn btn-info" value="Sauvegarder">
                 </div>
             </form>
-  </div>
-</div>
+        </div>
+
+    </div>
 
 
-@endsection
+    @endsection

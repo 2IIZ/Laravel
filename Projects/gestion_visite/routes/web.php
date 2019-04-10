@@ -19,6 +19,8 @@ Route::get('/', function () {
 
 Route::resource('rapports', 'RapportController');
 
+Route::resource('calendar', 'CalendarController');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
