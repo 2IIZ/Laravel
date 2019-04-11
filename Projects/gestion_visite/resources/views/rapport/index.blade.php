@@ -12,7 +12,7 @@
                         <thead>
                             <tr>
                                 <th>Rapport crée</th>
-                                <th>?</th>
+                                <th>Matricule</th>
                                 <th>Motif</th>
                                 <th>Bilan</th>
                                 <th>Échantillon</th>
